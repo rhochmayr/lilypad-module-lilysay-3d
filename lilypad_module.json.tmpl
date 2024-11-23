@@ -20,7 +20,7 @@
             {{ if .Image }}"{{ subst "IMAGE=%s" .Image }}",{{else}}"IMAGE=lilypad",{{ end }}
             {{ if .Message }}"{{ subst "MESSAGE=%s" .Message }}"{{else}}"Message=Blender on Lilypad Rocks!"{{ end }}
         ],
-        "Image": "rHochmayr/lilsay3d:latest"
+        "Image": "ghcr.io/rhochmayr/cowsay3d-blender:latest"
       },
       "Engine": "Docker",
       "Network": {
