@@ -1,0 +1,18 @@
+##
+## lilysay demo with Frog
+##
+$the_cow = <<EOC;
+    $thoughts
+     $thoughts
+      $thoughts
+EOC
+$the_cow .= <<'EOC';
+           _    _
+          (o)--(o)
+         /.______.\
+         \________/
+        ./        \.
+       ( .        , )
+        \ \_\\//_/ /
+         ~~  ~~  ~~
+EOC

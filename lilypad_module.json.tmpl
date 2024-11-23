@@ -1,0 +1,46 @@
+{
+  "machine": {
+    "gpu": 1,
+    "cpu": 1000,
+    "ram": 1000
+  },
+  "job": {
+    "APIVersion": "V1beta1",
+    "Spec": {
+      "Deal": {
+        "Concurrency": 1
+      },
+      "Docker": {
+        "Entrypoint": [
+            "blender", 
+            "--background", 
+            "--python", 
+            "/app/lilysay3d.py", 
+            "--",
+            {{ if .Image }}"{{ subst "IMAGE=%s" .Image }}",{{else}}"IMAGE=lilypad",{{ end }}
+            {{ if .Message }}"{{ subst "MESSAGE=%s" .Message }}"{{else}}"Message=Blender on Lilypad Rocks!"{{ end }}
+        ],
+        "Image": "rHochmayr/lilsay3d:latest"
+      },
+      "Engine": "Docker",
+      "Network": {
+        "Type": "None"
+      },
+      "PublisherSpec": {
+        "Type": "IPFS"
+      },
+      "Resources": {
+        "GPU": "1"
+      },
+      "Timeout": 1800,
+      "Verifier": "Noop",
+      "Outputs": [
+        {
+          "Name": "outputs",
+          "StorageSource": "IPFS",
+          "Path": "/outputs"
+        }
+      ]
+    }
+  }
+}
