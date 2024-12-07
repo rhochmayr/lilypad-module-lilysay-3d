@@ -17,8 +17,8 @@
             "--python", 
             "/app/lilysay3d.py", 
             "--",
-            {{ if .Image }}"{{ .Image }}",{{else}}"lilypad",{{ end }}
-            {{ if .Message }}"{{ .Message }}"{{else}}"Blender on Lilypad Rocks!"{{ end }}
+            {{ if .Image }} {{ .Image }},{{else}}"lilypad",{{ end }}
+            {{ if .Message }} {{ .Message }} {{else}}"Blender on Lilypad Rocks!"{{ end }}
         ],
         "Image": "ghcr.io/rhochmayr/cowsay3d-blender:latest"
       },
