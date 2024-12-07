@@ -13,13 +13,13 @@ To run Lilysay 3D in Lilypad, you can use the following commands:
 Defaults:
 
 ```sh
-lilypad run github.com/rhochmayr/lilypad-module-lilysay-3d:0.0.2
+lilypad run github.com/rhochmayr/lilypad-module-lilysay-3d:0.0.3
 ```
 
 Custom Message and (Cow) Image:
 
 ```sh	
-lilypad run github.com/rhochmayr/lilypad-module-lilysay-3d:0.0.2 -i Message="Blender on Lilypad is fun!" -i Image="lilycorn"
+lilypad run github.com/rhochmayr/lilypad-module-lilysay-3d:0.0.3 -i Message="Blender on Lilypad is fun!" -i Image="lilycorn"
 ```
 
 ## Docker
