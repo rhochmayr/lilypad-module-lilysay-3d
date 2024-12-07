@@ -6,6 +6,8 @@ Lilysay 3D is a fun demo that combines the power of Blender and the classic Cows
 
 There is no pre-generated blender scene in this repository. The scene is generated on the fly by the script. The script uses the Blender Python API to create a 3D scene with the desired cow and message. The scene is then rendered as an image file that can be saved and shared.
 
+![Lilysay 3D](examples\scene_setup_render_flaming-sheep.jpeg)
+
 ## Lilypad
 
 To run Lilysay 3D in Lilypad, you can use the following commands:
